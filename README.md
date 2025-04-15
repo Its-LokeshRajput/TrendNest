@@ -1,8 +1,32 @@
-# React + Vite
+# TrendNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TrendNest is a modern eCommerce platform for clothing, developed using React and Vite.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React.js (Vite), JavaScript, HTML5, CSS3
+- **Backend:** Spring Boot (coming soon if not integrated yet)
+- **State Management:** React Hooks & Context API
+- **Styling:** Custom CSS, possibly Bootstrap or Tailwind (if used)
+- **Other Tools:** Git, GitHub, ESLint
+
+## ✨ Features
+
+- User Authentication (Login/Signup)
+- Product Catalog Management
+- Add to Cart & Checkout functionality
+- Order Processing
+- Clean and responsive UI
+
+## 📦 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/Its-LokeshRajput/TrendNest.git
+cd TrendNest
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
