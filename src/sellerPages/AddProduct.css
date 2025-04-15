@@ -1,0 +1,75 @@
+#add-product-container {
+    width: 100vw;
+    height: 87.5vh;
+    background-color: rgba(20, 20, 20, 0.925);
+    position: relative;
+}
+
+#add-product-container #add-product-form {
+    /* background-color: blue; */
+    width: 70vw;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    color: silver;
+}
+
+#add-product-container #add-product-form label {
+    display: inline-block;
+    font-size: medium;
+    width: 150px;
+    text-align: center;
+}
+
+#add-product-container #add-product-form input {
+    width: 20vw;
+    padding: 2px 2px;
+    font-size: small;
+    outline: none;
+}
+
+#add-product-container #add-product-form textarea {
+    width: 65vw;
+    padding: 5px 2px;
+    font-size: small;
+    resize: none;
+    transform: translateX(3.5%);
+    outline: none;
+}
+
+#add-product-container #add-product-form #add-product-first-second-container {
+    display: flex;
+}
+
+#add-product-container #add-product-form #add-product-first-second-container .childof-first-second-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#add-product-container #add-product-form #add-product-third {
+    display: flex;
+}
+
+#add-product-btnSubmit {
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 139, 0);
+    color: white;
+    cursor: pointer;
+    transition: box-shadow .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    margin: 10px auto 0px auto;
+}
+
+#add-product-btnSubmit:hover {
+    box-shadow: 0px 0px .8cap rgb(0, 139, 0);
+}

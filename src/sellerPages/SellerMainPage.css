@@ -1,0 +1,68 @@
+#seller-main-page-container {
+    width: 100vw;
+    height: 12vh;
+    /* background-color: white; */
+    /* box-shadow: 0px 0px .5cap grey; */
+    color: white;
+    background-color: rgba(20, 20, 20, 0.925);
+}
+
+#seller-main-page-container #seller-main-page-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid grey;
+}
+
+#seller-main-page-container #seller-main-page-nav #seller-profile-pic {
+    margin-left: 5vw;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+#seller-main-page-container #seller-main-page-nav #seller-main-page-link-container {
+    margin-right: 5vw;
+    display: flex;
+    gap: 5vw;
+}
+
+#seller-main-page-container #seller-main-page-nav #seller-main-page-link-container .seller-main-page-links {
+    color: silver;
+    font-size: .9rem;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+#seller-main-page-container #seller-main-page-nav #seller-main-page-link-container .seller-main-page-links:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0%;
+    height: 8%;
+    background-color: white;
+    transition: width 1s ease-in-out;
+}
+
+#seller-main-page-container #seller-main-page-nav #seller-main-page-link-container .seller-main-page-links:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 95%;
+    height: 8%;
+    background-color: silver;
+    transform-origin: 0% 50%;
+    transform: rotate(180deg);
+    transition: width 1s ease-in-out;
+}
+
+#seller-main-page-container #seller-main-page-nav #seller-main-page-link-container .seller-main-page-links:hover::before {
+    width: 95%;
+}
+#seller-main-page-container #seller-main-page-nav #seller-main-page-link-container .seller-main-page-links:hover::after {
+    width: 0%;
+}

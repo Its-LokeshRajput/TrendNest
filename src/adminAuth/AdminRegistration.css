@@ -1,0 +1,82 @@
+#admin-registration-main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.925);
+    color: white;
+}
+
+#admin-registration-container {
+    background-color: rgba(140, 182, 255, 0.403);
+    box-shadow: 0px 0px 1cap black inset;
+    width: 25vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    /* padding: 10px 5px; */
+}
+
+#admin-registration-container #admin-registration-form {
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#admin-registration-container #admin-registration-form div label {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: medium;
+    width: 100px;
+}
+
+#admin-registration-container #admin-registration-form div input {
+    padding: 2px 10px;
+    font-weight: 400;
+    font-size: small;
+    outline: none;
+}
+
+#admin-registration-container #admin-registration-form #admin-password-container {
+    position: relative;
+}
+
+#admin-registration-container #admin-registration-form .toggle {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(-25%, 25%);
+    color: gray;
+    cursor: pointer;
+}
+
+#admin-registration-container #admin-registration-form #admin-registration-btnSubmit {
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    margin-top: 10px;
+    background-color: royalblue;
+}
+
+#admin-registration-container #admin-registration-form #admin-registration-btnSubmit:hover {
+    background-color: rgb(0, 139, 0);
+    /* box-shadow: 0px 0px .8cap rgb(0, 139, 0); */
+}
+
+#linkTo-adminLogIn {
+    color: white;
+    font-size: small;
+    margin-top: 20px;
+}

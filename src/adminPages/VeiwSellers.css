@@ -1,0 +1,40 @@
+#veiw-sellers-container {
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#veiw-sellers-container #veiw-sellers-title {
+    font-weight: 500;
+}
+
+#veiw-sellers-container #veiw-sellers-information-container {
+    /* background-color: blue; */
+    width: 95%;
+    height: 70vh;
+    overflow: scroll;
+    position: relative;
+}
+
+#view-sellers-table {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.519);
+    color: silver;
+    border: .5px solid white;
+}
+
+#view-sellers-table th{
+    padding: 5px 10px;
+    border-right: .5px solid grey;
+    border-bottom: .5px solid white;
+    background-color: rgb(75, 81, 99);
+}
+#view-sellers-table td{
+    padding: 5px 10px;
+    border-bottom: .5px solid white;
+    border-right: .5px solid grey;
+}

@@ -1,0 +1,132 @@
+#payment-page-main-container {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #1C1C1C;
+    /* margin-top: 20vh; */
+}
+
+#payment-page-address-details-container {
+    width: 45%;
+    height: 60%;
+    background-color: white;
+    /* padding: 10px 10px; */
+    align-self: flex-start;
+    margin-top: 30px;
+}
+
+#payment-page-address-details-container input{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#payment-page-pincode-mobNum-container {
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#payment-page-pincode-mobNum-container input {
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    outline: none;
+    border-bottom: .5px solid lightgrey;
+}
+
+#payment-page-full-name-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#payment-page-full-name-container input{
+    border: none;
+    padding: 5px 10px;
+    width: 83.5%;
+    outline: none;
+    border-bottom: .5px solid lightgrey;
+}
+
+#payment-page-BuildingName-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#payment-page-BuildingName-container input{
+    border: none;
+    padding: 5px 10px;
+    width: 83.5%;
+    outline: none;
+    border-bottom: .5px solid lightgrey;
+}
+
+#payment-page-LandMark-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#payment-page-LandMark-container input{
+    border: none;
+    padding: 5px 10px;
+    width: 83.5%;
+    outline: none;
+    border-bottom: .5px solid lightgrey;
+}
+
+#payment-page-city-state-container {
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#payment-page-city-state-container input {
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    outline: none;
+    border-bottom: .5px solid lightgrey;
+}
+
+#payment-page-payment-details-container {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#payment-page-order-details-container {
+    /* background-color: blue; */
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    align-self: flex-start;
+    flex-direction: column;
+    border: none;
+}
+
+#payment-page-btn-order-now {
+    padding: 5px 5px;
+    width: 90%;
+    background-color: #9C3;;
+    /* transform: translate(5.5%, 30%); */
+    /* transform: translateY(10%); */
+    margin: 20px auto 0px auto;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+}

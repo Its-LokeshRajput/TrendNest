@@ -1,0 +1,224 @@
+#admin-main-page-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.925);
+    color: silver;
+}
+
+#admin-main-page-container #admin-nav {
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.925);
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+    box-shadow: 0px 1px .3cap lightgray;
+    position: relative;
+}
+
+#admin-main-page-container #admin-nav #admin-profile {
+    display: inline-block;
+    width: 60px;
+    height: 55px;
+    border-radius: 100%;
+    margin-left: 10vw;
+    object-fit: cover;
+}
+
+#admin-main-page-container #admin-nav #admin-page-nav-links-container {
+    margin-right: 10vw;
+    display: flex;
+    gap: 5vw;
+}
+
+#admin-main-page-container #admin-nav #admin-page-nav-links-container #veiw-sellers {
+    color: silver;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+}
+
+#admin-main-page-container #admin-nav #admin-page-nav-links-container #veiw-users {
+    color: silver;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+}
+
+#admin-main-page-container #admin-nav #admin-page-nav-links-container .admin-nav-items::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0%;
+    height: 10%;
+    background-color: silver;
+    transition: width .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    border-radius: 50%;
+}
+
+#admin-main-page-container #admin-nav #admin-page-nav-links-container .admin-nav-items::after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    width: 97%;
+    height: 10%;
+    background-color: silver;
+    transform: rotate(180deg);
+    transform-origin: 0% 50%; /* X and Y position */
+    transition: width .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#admin-main-page-container #admin-nav #admin-page-nav-links-container .admin-nav-items:hover::before {
+    content: "";
+    width: 97%;
+}
+#admin-main-page-container #admin-nav #admin-page-nav-links-container .admin-nav-items:hover::after {
+    content: "";
+    width: 0%;
+}
+
+#admin-profile-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.233);
+    display: none;
+    transition: display .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    z-index: 111;
+}
+
+#admin-profile-container #admin-profile {
+    /* background-color: white; */
+    width: 25%;
+    /* background-color: rgba(20, 20, 20, 0.925); */
+    /* background-color: rgb(140, 167, 247); */
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.454);
+    height: 98%;
+    margin-left: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition:transform .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    z-index: 111;
+}
+
+#admin-edit-profile-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 400;
+    /* border: .5px solid grey; */
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: royalblue;
+    color: white;
+    transition: background-color .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#admin-edit-profile-button:hover {
+    background-color: rgb(99, 131, 226);
+}
+
+.admin-profile-inputs {
+    margin-top: 10px;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+}
+
+#admin-profile-name {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#admin-profile-email {
+    font-weight: 400;
+    font-size: 17px;
+    /* text-transform: capitalize; */
+}
+
+#admin-profile-minimize {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    padding: 5px 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: black;
+    transition: background-color .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#admin-profile-minimize:hover {
+    background-color: rgba(0, 0, 0, 0.23);
+}
+
+#update-admin-details-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(5px);
+    /* display: none; */
+    transition: display .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    z-index: 121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#update-admin-form {
+    background-color: rgba(0, 0, 0, 0.604);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+#update-admin-form label {
+    font-size: 14px;
+    padding: 5px 10px;
+    /* color: white; */
+}
+
+#update-admin-form label input {
+    padding: 3px 10px;
+    font-size: 13px;
+    outline: none;
+    border: none;
+}
+
+#update-admin-form button {
+    width: fit-content;
+    padding: 3px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    cursor: pointer;
+}
+
+#update-admin-form button:hover {
+    background-color: rgb(102, 131, 218);
+    /* margin: 5px auto; */
+}

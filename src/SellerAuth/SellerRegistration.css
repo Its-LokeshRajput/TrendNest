@@ -1,0 +1,116 @@
+#seller-registration-main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.925);
+}
+
+#seller-registration-container {
+    background-color: rgba(140, 182, 255, 0.403);
+    box-shadow: 0px 0px 1cap black inset;
+    color: white;
+    width: fit-content;
+    height: 70vh;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#seller-registration-container #seller-registration-form {
+    width: 55vw;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#seller-registration-container #seller-registration-form #right-left-container {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seller-registration-container #seller-registration-form #right-left-container #right{
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 27vw;
+    /* width: fit-content; */
+    gap: 10px;
+}
+
+#seller-registration-container #seller-registration-form #right-left-container #left{
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 27vw;
+    gap: 10px;
+}
+
+#seller-registration-container #seller-registration-form div label {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+}
+
+#seller-registration-container #seller-registration-form div input {
+    padding: 2px 10px;
+    outline: none;
+    font-size: small;
+}
+
+#seller-registration-container #seller-registration-form div textarea {
+    width: 55vw;
+    resize: none;
+    padding: 2px 2px;
+    outline: none;
+}
+
+#seller-registration-container #seller-registration-form #seller-password-container {
+    position: relative;
+}
+
+#seller-registration-container #seller-registration-form #seller-password-container .toggle {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(-25%, 25%);
+    color: gray;
+    cursor: pointer;
+}
+
+#seller-registration-container #seller-registration-form #btnRegister-seller {
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    background-color: royalblue;
+    /* margin-top: 10px; */
+}
+
+#seller-registration-container #seller-registration-form #btnRegister-seller:hover {
+    background-color: rgb(0, 139, 0);
+    /* box-shadow: 0px 0px .8cap rgb(0, 139, 0); */
+}
+
+#seller-registration-container #seller-registration-form #linkTo-seller-logIn {
+    color: white;
+    font-size: small;
+}

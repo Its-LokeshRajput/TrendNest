@@ -1,0 +1,36 @@
+{
+  "name": "cloth-ecommerce",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "axios": "^1.7.9",
+    "gsap": "^3.12.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-image-magnify": "^2.7.4",
+    "react-router-dom": "^7.1.5",
+    "react-slick": "^0.30.3",
+    "remixicon": "^4.6.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "vite": "^6.1.0"
+  }
+}

@@ -1,0 +1,53 @@
+#user-main-page-container {
+    position: absolute;
+    top: 0%;
+    width: 100vw; /* Start with zero width */
+    height: fit-content;
+    /* background-color: red; */
+    background-color: #1C1C1C;
+    overflow: scroll;
+    border-radius: 0px;
+    /* justify-self: center; */
+    /* height: fit-content; */
+}
+
+#user-main-page-sections-container .user-main-page-sections {
+    width: 95%;
+    /* height: 100vh; */
+    margin: 10px auto 0px auto;
+}
+
+#user-main-page-sections-container .user-main-page-sections #user-main-page-card-container {
+    /* padding: 5px 0px; */
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    columns: 4;
+    /* overflow-x: scroll; */
+    margin: 0px auto;
+    gap: 10px;
+    padding: 0px 20px 10px 20px;
+    /* background-color: red; */
+}
+
+#user-main-page-card {
+    /* background-color: red; */
+    /* background-color: red; */
+    width: fit-content;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+#user-main-page-sections-container .user-main-page-sections #user-main-page-card-container #user-main-page-product-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#user-main-page-sections-container .user-main-page-sections #user-main-page-card-container #user-main-page-product-price-container .user-main-page-prices {
+    font-weight: 400;
+    font-size: small;
+}

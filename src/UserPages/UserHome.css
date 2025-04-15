@@ -1,0 +1,176 @@
+#user-main-page-sections-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#user-main-page-distinct-categories-section {
+    width: 100vw;
+    height: 15vh;
+    /* background-color: rgba(255, 255, 255, 0.627); */
+    background-color: rgba(100, 100, 100, 0.24);
+    padding: 10px 21px;
+    border-radius: 10px;
+
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    color: silver;
+}
+
+#user-main-page-distinct-category-container {
+    width: 5.5vw;
+    height: 100%;
+    /* background-color: white; */
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* #user-main-page-womens-distinct-category-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} */
+
+#user-main-page-distinct-category-image-container {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 2px solid rgb(234, 83, 108);
+}
+
+#user-main-page-distinct-category-image-container img {
+    flex-shrink: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#user-main-page-card {
+    /* border-radius: 10px; */
+    /* transition: box-shadow .5s ease; */
+    background-color: #F8F9FA;
+    border: 2px solid #D4AF37;
+    /* transition: transform .5s ease-in-out; */
+    cursor: pointer;
+
+    transform: translateZ(50px);
+    position: relative;
+    /* filter: drop-shadow(-20px 20px 10px rgba(78, 76, 76, 0.56)); */
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+#user-main-page-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    transform: translateZ(-50px) translateY(-5px) translateX(5px);
+    /* background-color: rgba(42, 41, 41, 0.631); */
+    border-radius: 20px;
+    filter: blur(5px);
+    /* transform-style: preserve-3d; */
+}
+
+#user-main-page-card-image-container {
+    /* overflow: hidden; */
+    position: relative;
+    /* background-color: rgba(20, 19, 19, 0.922); */
+    background-size: contain;
+    /* object-fit: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity: .5; 
+    filter: grayscale(1); */
+
+    transform: translateZ(20px) translateX(0px) translateY(0px);
+    /* box-shadow: 0px 0px 1cap black; */
+}
+
+#user-main-page-card-image-container img {
+    /* position: absolute; */
+    /* box-shadow: 0px 0px 1cap black; */
+    /* box-shadow: 0px 0px 5px black; */
+    transform: translateZ(40px) translateX(0px) translateY(0px);
+    border-radius: 5px;
+
+    /* opacity: 0; */
+}
+
+#user-main-page-slider-container {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.slider-image-container {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Change color of inactive dots */
+.slick-dots li button:before {
+    opacity: 1;
+    color: white !important;  /* Change this to your desired color */
+    font-size: x-small;
+    margin-top: 0px;
+}
+
+/* Change color of active dot */
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: gray !important;  /* Change this to your desired active color */
+    font-size: xx-small;
+}
+
+/* Change arrow color */
+
+.slick-prev:before {
+    margin-left: -15px;
+}
+.slick-next:before {
+    margin-left: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: white !important;  /* Change to your desired color */
+}
+
+
+/* SVG */
+#string {
+    height: 50px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+svg {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}

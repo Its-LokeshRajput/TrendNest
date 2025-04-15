@@ -1,0 +1,101 @@
+#seller-log-in-main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.925);
+}
+
+#seller-log-in-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    /* background-color: white; */
+    background-color: rgba(140, 182, 255, 0.403);
+    box-shadow: 0px 0px 1cap black inset;
+    color: white;
+    border-radius: 10px;
+}
+
+#seller-log-in-container #seller-log-in-form {
+    width: fit-content;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#seller-log-in-container #seller-log-in-form #seller-password-container {
+    position: relative;
+}
+
+#seller-log-in-container #seller-log-in-form label {
+    display: inline-block;
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+    width: 100px;
+}
+
+#seller-log-in-container #seller-log-in-form input {
+    font-size: small;
+    /* font-weight: 400; */
+    /* background-color: blue; */
+    padding: 5px 10px;
+    outline: none;
+    border: .5px solid grey;
+    font-weight: 400;
+}
+
+#seller-log-in-container #seller-log-in-form #seller-logIn-btnSubmit {
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    margin-top: 10px;
+    background-color: royalblue;
+}
+
+#seller-log-in-container #seller-log-in-form #seller-logIn-btnSubmit:hover {
+    background-color: rgb(0, 139, 0);
+    /* box-shadow: 0px 0px .8cap rgb(0, 139, 0); */
+}
+
+#seller-log-in-container #seller-log-in-form #sellerRegistration-form-link {
+    color: white;
+    font-size: small;
+}
+
+#seller-log-in-container #seller-log-in-form .toggle {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(-25%, 25%);
+    color: gray;
+    cursor: pointer;
+}
+
+#seller-log-in-minimize {
+    position: absolute;
+    top: 1.5%;
+    right: 1%;
+    padding: 2px 2px;
+    cursor: pointer;
+    transition: background-color .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    border-radius: 100%;
+}
+
+#seller-log-in-minimize:hover {
+    background-color: royalblue;
+    /* filter: drop-shadow(0px 0px .5px black); */
+    /* filter: drop-shadow(0px 0px 4px #4444dd); */
+}

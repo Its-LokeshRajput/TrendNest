@@ -1,0 +1,107 @@
+#user-registration-main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.925);
+    /* background-color: red; */
+}
+
+#user-registration-container {
+    /* background-color: white; */
+    background-color: rgba(140, 182, 255, 0.403);
+    box-shadow: 0px 0px 1cap black inset;
+    color: white;
+    width: fit-content;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+#user-registration-container #user-registration-form {
+    /* background-color: red; */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#user-registration-container #user-registration-form label{
+    display: inline-block;
+    width: 120px;
+    font-size: small;
+    text-align: center;
+}
+
+#user-registration-container #user-registration-form input{
+   padding: 5px 10px;
+   outline: none;
+}
+
+#user-registration-container #user-registration-form textarea{
+    width:280px;
+   padding: 5px 10px;
+   outline: none;
+   resize: none;
+}
+
+#user-registration-form #user-password-container {
+    position: relative;
+}
+
+#user-registration-form #user-password-container .toggle {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    /* transform: translate(-50%, 25%); */
+    color: gray;
+}
+
+
+#user-registration-container #user-registration-form #btnSubmit {
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: royalblue;
+    transition: background-color .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    margin-top: 20px;
+}
+
+#user-registration-container #user-registration-form #btnSubmit:hover {
+    /* box-shadow: 0px 0px .8cap rgb(0, 139, 0); */
+    background-color: rgb(0, 139, 0);
+}
+
+#user-registration-minimize {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding: 2px 2px;
+    cursor: pointer;
+    transition: background-color .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    border-radius: 100%;
+}
+
+#user-registration-minimize:hover {
+    /* filter: drop-shadow(0px 0px .5px black); */
+    background-color: royalblue;
+    /* filter: drop-shadow(0px 0px 4px #4444dd); */
+}
+
+#linkRegistration {
+    /* color: grey; */
+    color: white;
+    font-size: small;
+    margin-top: 10px;
+    /* text-decoration: none; */
+}
