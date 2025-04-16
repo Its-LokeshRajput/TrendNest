@@ -5,10 +5,10 @@ TrendNest is a modern eCommerce platform for clothing, developed using React and
 ## 🛠️ Tech Stack
 
 - **Frontend:** React.js (Vite), JavaScript, HTML5, CSS3
-- **Backend:** Spring Boot (coming soon if not integrated yet)
+- **Backend:** Spring Boot (coming soon)
 - **State Management:** React Hooks & Context API
-- **Styling:** Custom CSS, possibly Bootstrap or Tailwind (if used)
-- **Other Tools:** Git, GitHub, ESLint
+- **Styling:** Custom CSS.
+- **Other Tools:** Git, GitHub
 
 ## ✨ Features
 
